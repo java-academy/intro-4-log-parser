@@ -1,0 +1,31 @@
+= Log parser
+
+An application that allows to parse logs and offers several functionalities.
+
+TIP: see Steps, at the bottom of the page for how to proceed.
+
+== Prerequirements
+
+. *JDK11+*.
+. *Maven 3.6 +*.
+. A sheet of paper and a pen.
+
+== Requirements
+
+Remember to meet both NF and F!
+
+=== Non-functional
+
+. It must work (if it doesn’t, it’s disqualified): if I cannot play, it doesn’t work.
+. OOD is a must.
+. Analyze requirements.
+. Create a list of object and method for this application.
+. Create CRC cards.
+. Create a flow chart.
+. Only pure *JDK*, testing dependencies and static code analysis plugins are allowed.
+. Write in TDD.
+. Follow SOLID principles.
+. Make commits on each significant change.
+. Commit messages have to follow good practices.
+
+=== Functional
