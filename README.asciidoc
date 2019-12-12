@@ -1,3 +1,5 @@
+:icons: font
+
 = Log parser
 
 An application that allows to parse logs and offers several functionalities.
@@ -16,7 +18,7 @@ Remember to meet both NF and F!
 
 === Non-functional
 
-. It must work (if it doesn’t, it’s disqualified): if I cannot play, it doesn’t work.
+. It must work (if it does not, it’s disqualified): if I cannot play, it does not work.
 . OOD is a must.
 . Analyze requirements.
 . Create a list of object and method for this application.
@@ -29,3 +31,54 @@ Remember to meet both NF and F!
 . Commit messages have to follow good practices.
 
 === Functional
+
+. Parser accepts command-line switches (the startup parameters):
+.. -h for help,
+.. -f for log file name / path,
+.. -d for log in directory name,
+.. -t targeted (direct search),
+. Parser without switches displays usage instructions (usage function).
+.
+
+// FIXME list numeration reset after block
+== Steps
+
+IMPORTANT: Work on branches!
+
+. Conceptualization
+
+TIP: You can use the pen and the paper for all notes and drawings.
+
+.. Read the description of the project (a few first lines of the specification).
+.. Conceptualize: write down nouns and verbs from the specs (main ones).
+.. Draw a flow chart for a simple version of the program.
+. Branch *JShell*
+.. Launch `JShell` and tackle there the main technical problem you anticipate:
+... file reading.
+...
+
+IMPORTANT: Next, you have to create your app *4 times* from scraps.
+Each time in new branch derived from branch *JShell*.
+
+. Branch *Imperative*
+
+CAUTION: Right now, you should use mantra to start your project.
+
+.. Rework the `JShell` file into a Java file, with proper class and main method.
+Use just java to launch it, code imperatively for now.
+. Branch *OOP*
+
+CAUTION: So far you have been increasing your familiarity with the problem.
+It’s time to do more. For instance: let’s introduce OOP.
+
+.. If you haven’t so far - use mantra and have a full-blown project with pom.xml, Maven, etc.
+. Branch *TDD*
+
+TIP: Have in mind
+
+.. Add TestNG to your POM - on test scope of course.
+.. Create a `TODO.lst` file and have there the list of your test scenarios.
+.. Scenario by scenario do the TDD mantra: red-green-refactor.
+. Branch *FP*
+.. Introduce functional API: streams and lambdas
+.. Perhaps write a version of the app where you do everything in one line (stream!)
