@@ -38,14 +38,14 @@ Remember to meet both NF and F!
 .. -d for log in directory name,
 .. -t targeted (direct search),
 . Parser without switches displays usage instructions (usage function).
-.
 
-// FIXME list numeration reset after block
+
 == Steps
 
 IMPORTANT: Work on branches!
 
 . Conceptualization
++
 
 TIP: You can use the pen and the paper for all notes and drawings.
 
@@ -55,24 +55,27 @@ TIP: You can use the pen and the paper for all notes and drawings.
 . Branch *JShell*
 .. Launch `JShell` and tackle there the main technical problem you anticipate:
 ... file reading.
-...
++
 
 IMPORTANT: Next, you have to create your app *4 times* from scraps.
 Each time in new branch derived from branch *JShell*.
 
 . Branch *Imperative*
++
 
 CAUTION: Right now, you should use mantra to start your project.
 
 .. Rework the `JShell` file into a Java file, with proper class and main method.
 Use just java to launch it, code imperatively for now.
 . Branch *OOP*
++
 
 CAUTION: So far you have been increasing your familiarity with the problem.
 It’s time to do more. For instance: let’s introduce OOP.
 
 .. If you haven’t so far - use mantra and have a full-blown project with pom.xml, Maven, etc.
 . Branch *TDD*
++
 
 TIP: Have in mind
 
