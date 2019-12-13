@@ -33,12 +33,49 @@ Remember to meet both NF and F!
 === Functional
 
 . Parser accepts command-line switches (the startup parameters):
-.. -h for help,
-.. -f for log file name / path,
-.. -d for log in directory name,
-.. -t targeted (direct search),
-. Parser without switches displays usage instructions (usage function).
+.. `-h` for help,
+.. `-f` for log file name or path to logs directory,
+.. `-t` targeted (direct search),
+. Parser without the switches displays usage instructions (usage function).
+. Parser run with the switch `-f`  and no path provided, by default takes all `*.log` files
+in the directory where it was started.
+. Parser run with the switch `-f` and the path to the directory takes all `*.log` files in this location.
+. Parser run with the switch `-f` and the path to a file offers file statistics (example lower) , namely:
+.. Number of messages in total.
+.. Number of messages per level.
+.. Exception statistics (how many of which type)
++
 
+.Messages int total and per level
+----
+File: output.log
+
+TOTAL: 8
+
+ERROR: 5
+WARNING: 3
+----
+
+. Parser allows directed searches (example below) with switch `-t` and searched *string*.
+.. Parser either displays "NOT FOUND".
++
+
+----
+.Directed search example
+> log_parser.py -t "phrase I'm looking for" -f filename.log
+Looking for "phrase I'm looking for" in filename.log
+NOT FOUND
+----
+
+.. Or parser displays "FOUND x occurrences, first on line y"
++
+
+.Directed search example
+----
+> log_parser.py -t "phrase I'm looking for and find" -f filename.log
+Looking for "phrase I'm looking for and find" in filename.log
+FOUND 1 occurrences, first on line 1
+----
 
 == Steps
 
@@ -81,7 +118,7 @@ TIP: Have in mind
 
 .. Add TestNG to your POM - on test scope of course.
 .. Create a `TODO.lst` file and have there the list of your test scenarios.
-.. Scenario by scenario do the TDD mantra: red-green-refactor.
+.. Scenario by scenario, you do the TDD mantra: red-green-refactor.
 . Branch *FP*
 .. Introduce functional API: streams and lambdas
 .. Perhaps write a version of the app where you do everything in one line (stream!)
