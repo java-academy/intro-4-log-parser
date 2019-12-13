@@ -64,8 +64,8 @@ WARNING: 3
 .. Parser either displays "NOT FOUND".
 +
 
-----
 .Directed search example
+----
 > log_parser.py -t "phrase I'm looking for" -f filename.log
 Looking for "phrase I'm looking for" in filename.log
 NOT FOUND
