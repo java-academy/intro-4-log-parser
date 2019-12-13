@@ -2,9 +2,13 @@
 
 = Log parser
 
-An application that allows to parse logs and offers several functionalities.
+An application that allows to parse the logs and offers several functionalities.
 
-TIP: see Steps, at the bottom of the page for how to proceed.
+Logging tells us what happened. Of course, upon hearing it, it's clear *Java* should have multiple log files.
+
+Let's parse them! Let's write a parser for out logs, that offers several functionalities.
+
+TIP: See _Steps_ at the bottom of the page for how to proceed.
 
 == Prerequirements
 
@@ -79,14 +83,15 @@ FOUND 1 occurrences, first on line 1
 
 == Steps
 
-IMPORTANT: Work on branches!
+IMPORTANT: Work on _branches_!
 
 . Conceptualization
 +
 
 TIP: You can use the pen and the paper for all notes and drawings.
 
-.. Read the description of the project (a few first lines of the specification).
+.. Read the description of the project (a few first lines of the specification)
+and functional requirements.
 .. Conceptualize: write down nouns and verbs from the specs (main ones).
 .. Draw a flow chart for a simple version of the program.
 . Branch *JShell*
@@ -114,7 +119,7 @@ It’s time to do more. For instance: let’s introduce OOP.
 . Branch *TDD*
 +
 
-TIP: Have in mind
+TIP: Have in mind `@DataProvider`.
 
 .. Add TestNG to your POM - on test scope of course.
 .. Create a `TODO.lst` file and have there the list of your test scenarios.
